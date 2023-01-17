@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("../images/background.jpeg");
+    background-image: url("../images/background.jpg");
     background-position: center;
+    background-size: cover;
 
     color: #f8f8ff;
     text-align: center;
@@ -12,7 +13,7 @@ body {
     font-family: "Outfit", "Open Sans", sans-serif;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
