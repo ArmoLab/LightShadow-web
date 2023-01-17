@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../images/background.jpeg");
+    background-position: center;
+
+    color: #f8f8ff;
+    text-align: center;
+
+    font-family: "Outfit", "Open Sans", sans-serif;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body, .container {
+    width: 100%;
+    height: 100vh;
+}
+
+.contents h3 {
+    font-weight: normal;
+}
+
+button {
+    transition: all ease-in-out 0.2s;
+    border: none;
+    border-radius: 5rem;
+    padding: 15px 25px;
+
+    background-color: #1f1f1f;
+    color: #f8f8ff;
+}
+button:hover {
+    background-color: #f8f8ff;
+    color: #232323;
+}
+button:active {
+    transform: scale(.95);
+}
