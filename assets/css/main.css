@@ -6,6 +6,7 @@ body {
     background-image: url("../images/background.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 
     color: #f8f8ff;
     text-align: center;
@@ -17,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
 }
 body, .container {
     width: 100%;
@@ -27,11 +29,14 @@ body, .container {
     font-weight: normal;
 }
 
+
+
 button {
     transition: all ease-in-out 0.2s;
     border: none;
     border-radius: 5rem;
     padding: 15px 25px;
+    cursor: pointer;
 
     background-color: #1f1f1f;
     color: #f8f8ff;
@@ -42,4 +47,15 @@ button:hover {
 }
 button:active {
     transform: scale(.95);
+}
+
+/* post part */
+.container[is-post] {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+.container[is-post] .contents {
+    height: 90vh;
+    width: min(75%, 900px);
+    text-align: left;
 }
