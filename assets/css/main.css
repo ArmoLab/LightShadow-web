@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -29,10 +28,8 @@ body, .container {
     font-weight: normal;
 }
 
-
-
 button {
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s !important;
     border: none;
     border-radius: 5rem;
     padding: 15px 25px;
@@ -59,3 +56,19 @@ button:active {
     width: min(75%, 900px);
     text-align: left;
 }
+.container[is-post] p.back button {
+    background-color: rgba(0,0,0,0);
+    padding: 10px;
+    display: flex;
+}
+.container[is-post] p.back button svg {
+    fill: #ffffff;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.container[is-post] p.back button:hover {
+    color: #f8f8ff;
+    background-color: rgba(255,255,255,0.45);
+}
+
